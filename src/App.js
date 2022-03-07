@@ -1,32 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
-import { Container, Navbar,Nav} from 'react-bootstrap';
+import React, { useRef, useEffect } from 'react';
+import { useLocation, Switch } from 'react-router-dom';
+import AppRoute from './utils/AppRoute';
+import ScrollReveal from './utils/ScrollReveal';
+import ReactGA from 'react-ga';
 
+// Layouts
+import LayoutDefault from './layouts/LayoutDefault';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// Views 
+import Home from './views/Home';
 
-function App() {
+// Initialize Google Analytics
+ReactGA.initialize(process.env.REACT_APP_GA_CODE);
+
+const trackPage = page => {
+  ReactGA.set({ page });
+  ReactGA.pageview(page);
+};
+
+const App = () => {
+
+  const childRef = useRef();
+  let location = useLocation();
+
+  useEffect(() => {
+    const page = location.pathname;
+    document.body.classList.add('is-loaded')
+    childRef.current.init();
+    trackPage(page);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location]);
+
   return (
-    <div className="App">
-    <Navbar sticky="top" variant="dark" style={{backgroundColor:'royalblue',padding:15}}>
-    <Container style={{marginLeft:15}}>
-      <Navbar.Brand href="#home" >
-     <b>College Search</b> 
-   &emsp;&emsp;
-      </Navbar.Brand>
-     <Nav className="me-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    </Container>
-  </Navbar>
-
-
-
-    </div>
+    <ScrollReveal
+      ref={childRef}
+      children={() => (
+        <Switch>
+          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+        </Switch>
+      )} />
   );
 }
-
 
 export default App;
