@@ -9,6 +9,9 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
 import Home from './views/Home';
+import College from './views/College';
+import RankPredictor from './views/RankPredictor';
+import DiscussionForum from './views/DiscussionForum';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -37,6 +40,9 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute exact path="/college" component={College} layout={LayoutDefault} />
+          <AppRoute exact path="/rank-predictor" component={RankPredictor} layout={LayoutDefault} />
+          <AppRoute exact path="/discussion-forum" component={DiscussionForum} layout={LayoutDefault} />
         </Switch>
       )} />
   );
