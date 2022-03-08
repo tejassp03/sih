@@ -12,6 +12,7 @@ import Home from './views/Home';
 import College from './views/College';
 import RankPredictor from './views/RankPredictor';
 import DiscussionForum from './views/DiscussionForum';
+import Courses from './views/Courses';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -43,6 +44,7 @@ const App = () => {
           <AppRoute exact path="/college" component={College} layout={LayoutDefault} />
           <AppRoute exact path="/rank-predictor" component={RankPredictor} layout={LayoutDefault} />
           <AppRoute exact path="/discussion-forum" component={DiscussionForum} layout={LayoutDefault} />
+          <AppRoute exact path="/courses" component={Courses} layout={LayoutDefault} />
         </Switch>
       )} />
   );
