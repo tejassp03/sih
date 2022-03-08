@@ -5,6 +5,8 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+{/*import Dropdown from 'react-bootstrap/Dropdown';
+import 'bootstrap/dist/css/bootstrap.css';*/}
 
 const propTypes = {
   ...SectionProps.types
@@ -69,12 +71,31 @@ const Hero = ({
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
+                  {/*<Dropdown>
+                    <Dropdown.Toggle color="primary" id="dropdown-basic">
+                      Course Name
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">Engineering</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Medical</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Commerce</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                      Location
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">Bangalore</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Mumbai</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Delhi</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>*/}
                   <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
                     Get started
-                    </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
-                    View on Github
-                    </Button>
+                  </Button>
                 </ButtonGroup>
               </div>
             </div>
