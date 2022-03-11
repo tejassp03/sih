@@ -29,6 +29,7 @@
 }
 
 .list-reset-link{
+	font-size: 1rem;
 	color:white !important;
 }
 
@@ -102,6 +103,9 @@
 		align-items: center;
 		white-space: nowrap;
 		margin-bottom: 0;
+	}
+	svg{
+		width:100% ;
 	}
 }
 
