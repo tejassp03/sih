@@ -70,7 +70,7 @@ const Hero = ({
             <div className="container-xs">
               <p
                 className="m-0 mb-32 reveal-from-bottom"
-                data-reveal-delay="400"
+                data-reveal-delay="400" style={{visibility:"hidden" ,fontWeight: "bold"}}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Maecenas congue, odio non posuere semper, lectus erat pulvinar
