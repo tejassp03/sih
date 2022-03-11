@@ -151,12 +151,33 @@
 		margin: $button-group-padding * 0.5;
 	}
 }
-
+.btn{
+	background-color: #5658DD;
+	border: none;
+	height: 2.5rem;
+}
+#search-input{
+	height: 2.5rem;
+	padding: 1rem;
+	width: 85%;
+	border: none;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+}
+.btn:hover{
+	cursor: pointer;
+}
 @include media( '<=medium' ) {
 
 	.button-wide-mobile {
 		width: 100%;
 		max-width: $button--max-size-mobile;
+	}
+	#search-input{
+		width: 70%;
+	}
+	.btn{
+		display: none;
 	}
 }
 

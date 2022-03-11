@@ -1,8 +1,14 @@
 .features-tiles {
+	color:darkgray;
+	margin-top:5rem;
 
 	.section-inner {
 		padding-top: $features-tiles--padding-t__mobile;
 		padding-bottom: $features-tiles--padding-b__mobile;
+
+		.features-tiles-item-content h4{
+			color:black;
+		}
 	}
 
 	.section-header {

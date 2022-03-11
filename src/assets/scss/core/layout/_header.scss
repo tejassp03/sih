@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   z-index: 10 !important;
-  background: royalblue;
+  background: transparent;
 
   + .site-content {
     .section:first-of-type {
@@ -52,14 +52,19 @@
 
   a:not(.button) {
     display: block;
-    @include anchor-aspect(header);
+    color: white;
     @include font-weight(header-link);
     text-transform: $link-header--transform;
     padding: 0 $header-nav--padding-h;
+    transition:0.2s;
 
     .invert-color & {
       @include anchor-aspect(header, inverse);
     }
+  }
+
+  a:hover{
+    color:#5658DD;
   }
 
   a.button {

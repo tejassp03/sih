@@ -5,6 +5,10 @@
 	margin: 0 auto;
 	padding-left: $container--padding__mobile;
 	padding-right: $container--padding__mobile;
+	
+	h1,h2,h3{
+		color:rgb(17, 16, 16);
+	}
 
 	@include media( '>small' ) {
 		padding-left: $container--padding__desktop;

@@ -5,10 +5,10 @@ import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
 import Image from "../elements/Image";
 import Modal from "../elements/Modal";
-{
+
   /*import Dropdown from 'react-bootstrap/Dropdown';
 import 'bootstrap/dist/css/bootstrap.css';*/
-}
+
 
 const propTypes = {
   ...SectionProps.types,
@@ -76,9 +76,9 @@ const Hero = ({
                 Maecenas congue, odio non posuere semper, lectus erat pulvinar
                 leo.
               </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
+              {/*<div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  {/*<Dropdown>
+                  <Dropdown>
                     <Dropdown.Toggle color="primary" id="dropdown-basic">
                       Course Name
                     </Dropdown.Toggle>
@@ -99,7 +99,7 @@ const Hero = ({
                       <Dropdown.Item href="#/action-2">Mumbai</Dropdown.Item>
                       <Dropdown.Item href="#/action-3">Delhi</Dropdown.Item>
                     </Dropdown.Menu>
-                  </Dropdown>*/}
+                  </Dropdown>
                   <Button
                     tag="a"
                     color="primary"
@@ -109,7 +109,15 @@ const Hero = ({
                     Get started
                   </Button>
                 </ButtonGroup>
-              </div>
+              </div>*/}
+              <div class="input-group">
+  <div class="form-outline">
+
+    <input id="search-input" type="search" class="form-control" placeholder="Search..."/>
+    <button class="btn" for="form1">Search</button>
+  </div>
+  
+</div>
             </div>
           </div>
           {/*<div
@@ -141,6 +149,7 @@ const Hero = ({
         </div>
       </div>
     </section>
+    
   );
 };
 
