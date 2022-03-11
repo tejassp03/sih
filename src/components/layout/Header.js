@@ -85,7 +85,7 @@ const Header = ({
             'site-header-inner',
             bottomDivider && 'has-bottom-divider'
           )}>
-          <Logo />
+          <Logo /> <span style={{color: "white"}}>HashStack</span>
           {!hideNav &&
             <>
               <button

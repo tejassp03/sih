@@ -2,7 +2,7 @@ import React from 'react';
 
 const College = () =>{
     return(
-        <h1>College-List</h1>
+        <h1>COMING SOON!</h1>
     );
 };
 

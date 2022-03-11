@@ -64,7 +64,7 @@ const Hero = ({
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              Find top college's in{" "}
+              Find top colleges in{" "}
               <span className="text-color-primary">India</span>
             </h1>
             <div className="container-xs">
@@ -114,7 +114,7 @@ const Hero = ({
   <div class="form-outline">
 
     <input id="search-input" type="search" class="form-control" placeholder="Search..."/>
-    <button class="btn" for="form1">Search</button>
+    <button class="btn" form="form1" >Search</button>
   </div>
   
 </div>

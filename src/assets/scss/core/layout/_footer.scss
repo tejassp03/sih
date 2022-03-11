@@ -1,6 +1,6 @@
 .site-footer {
 	position: relative;
-	background-color: grey;
+	background-color: #25282C;
 	&::before {
 		content: '';
 		position: absolute;
@@ -12,9 +12,12 @@
 		z-index: -3;
 	}
 }
-
+.site-footer> container{
+	background-color: white;
+}
 .site-footer-inner {
 	padding: $footer--padding__mobile 0;
+	
 }
 
 .footer-top {
@@ -26,7 +29,7 @@
 }
 
 .list-reset-link{
-	color:black !important;
+	color:white !important;
 }
 
 .footer-blocks {
@@ -103,7 +106,9 @@
 }
 
 .footer-copyright{
-	color:black;
+	color:white;
+	font-size: 1rem;
+
 	a{
 		color:gray;
 		transition:0.3s;
@@ -111,6 +116,11 @@
 	a:hover{
 		color:black;
 	}
+}
+.copyright_msg{
+	position:absolute;
+	bottom: 0;right: 7;
+	font-weight: normal;
 }
 
 .footer-social {

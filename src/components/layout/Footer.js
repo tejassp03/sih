@@ -45,8 +45,9 @@ const Footer = ({
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
-            <div className="footer-copyright">Made with <span role="img" aria-label="emoji">❤️</span></div>
+            <div className="footer-copyright">HashStack</div>
           </div>
+          <h6 className="copyright_msg">© 2021 by HashStack. All Rights Reserved.</h6>
         </div>
       </div>
     </footer>
